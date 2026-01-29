@@ -27,7 +27,7 @@ describe('Registration', function (): void {
             ])
             ->assertJson([
                 'success' => true,
-                'message' => 'User registered successfully',
+                'message' => 'User registered successfully. Please check your email to verify your account.',
             ]);
 
         $this->assertDatabaseHas('users', [
